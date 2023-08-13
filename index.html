@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="display">
+            <input type="text" readonly placeholder="PASSWORD" class="display1"  data-passdis>
+            <button class="copybtn" data-copy>
+                <span class="copt" data-copymsg></span>
+                    <img src="jsfull/16516805176296027968265576153334 (2).jpg" width="23" height="23" alt="">
+            </button>
+        </div>
+        <div class="input-con">
+            <div class="len">
+                <p>Passwors Length</p>
+                <p data-lennum>0</p>
+            </div >
+            <!-- slider -->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lenslider>
+            <div class="check">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">includes uppercase letter</label>
+            </div>
+            <div class="check">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">includes lowercase letter</label>
+            </div>
+            <div class="check">
+            <input type="checkbox" id="number">
+            <label for="number">includes number </label>
+            </div>
+            <div class="check">
+            <input type="checkbox" id="symbol">
+            <label for="symbol">includes symbol </label>
+            </div>
+
+            <div class="strength">
+                <p>Strength</p>
+                <div class="ind" data-ind class="circle"></div>
+            </div>
+
+            <!-- butten gen -->
+            <button class="btn-gen">Generate password</button>
+        </div>
+    </div>
+    <script src="jsfull/javascript.js"></script>
+</body>
+</html>
